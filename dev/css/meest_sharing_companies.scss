@@ -467,11 +467,13 @@
     display: flex;
     display: flex;
     align-items: center;
-    @include maxWidth991(){
-        flex-direction: column;
-    }
     @include maxWidth768(){
         padding: 35px 0 40px;
+    }
+    .d-flex{
+        @include maxWidth991(){
+            flex-direction: column;
+        }
     }
         &__img{
             width: calc(50% - 90px);
@@ -485,7 +487,7 @@
                 margin-right: 0;
                 margin-bottom: 30px;
             }
-            .heading{
+            .title-sec{
                 margin-bottom: 50px;
                 @include maxWidth991(){
                     text-align: center;
@@ -1002,7 +1004,7 @@
     padding-left: auto!important;
 }
 body .select2-container{
-    width: -moz-available!important;
+    width: 100%!important;
 }
 body .select2-container--default .select2-selection--single {
     background-color: #fff;
